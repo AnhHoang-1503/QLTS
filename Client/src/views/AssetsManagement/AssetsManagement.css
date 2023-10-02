@@ -1,0 +1,365 @@
+.h-page__toolbar {
+    height: 60px;
+    width: 100%;
+    background-color: var(--color-grey-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h-toolbar__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.h-toolbar__search {
+    width: 180px;
+}
+
+.h-toolbar__assettype {
+    width: 250px;
+}
+
+.h-toolbar__department {
+    width: 250px;
+}
+
+.h-toolbar__right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-direction: row-reverse;
+}
+
+.h-toolbar__add {
+    width: 112px;
+}
+
+.h-page__table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #fff;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #cdd3d6;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #888;
+    }
+}
+
+.h-table__main {
+    background-color: #fff;
+    border: 1px solid var(--color-grey-3);
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    overflow: auto;
+    max-height: calc(100vh - 44px - 60px - 40px - 20px);
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+.h-table__footer {
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+    border: 1px solid var(--color-grey-3);
+    border-radius: 0 0 3px 3px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+    table-layout: fixed;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #f5f5f5;
+    font-weight: 700;
+    outline: 1px solid var(--color-grey-5);
+    padding: 0;
+    z-index: 1;
+}
+
+thead,
+table tr {
+    height: 38px;
+    border-bottom: 1px solid var(--color-grey-5);
+}
+
+table tr {
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: var(--color-blue-5);
+}
+
+tr.h-row--selected {
+    background-color: var(--color-blue-5);
+}
+
+th,
+td {
+    text-align: start;
+    padding-right: 16px;
+    white-space: nowrap;
+}
+
+.h-column__checkbox {
+    width: 46px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+.h-column__index {
+    text-align: center;
+    width: 46px;
+    padding: 0 16px 0 4px;
+}
+
+table input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.h-column__originalprice .h-column__name,
+.h-column__accumulated .h-column__name,
+.h-column__remaining .h-column__name,
+.h-column__amount .h-column__name {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.h-column__originalprice {
+    text-align: end;
+    width: 11%;
+}
+
+.h-column__accumulated,
+.h-column__remaining {
+    text-align: end;
+    width: 9%;
+}
+
+.h-column__amount {
+    text-align: end;
+    width: 7%;
+}
+
+.h-column__tool {
+    width: 88px;
+    text-align: center;
+}
+
+.h-column__department {
+    width: 13%;
+}
+
+.h-column__id {
+    width: 7%;
+}
+
+.h-column__name .h-column__type .h-column__department {
+    table-layout: fixed;
+}
+
+.h-tool__block {
+    display: none;
+    position: relative;
+}
+
+tr:hover .h-tool__block {
+    display: block;
+}
+
+.h-tool__edit {
+    cursor: pointer;
+    position: absolute;
+    transform: translate(50%, -50%);
+    left: 0px;
+}
+
+.h-tool__clone {
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    right: 8px;
+}
+
+table tr:first-child {
+    border-top: none;
+}
+
+.h-table__footer {
+    position: relative;
+}
+
+.h-footer__left {
+    position: relative;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 16px;
+    z-index: 3;
+}
+
+.h-footer__total {
+    margin-right: 38px;
+}
+
+.h-footer__total span {
+    font-weight: 700;
+}
+
+.h-footer__shownrecords {
+    width: 59px;
+    height: 26px;
+    margin-right: 20px;
+}
+
+.h-shownrecords__text {
+    position: absolute;
+    left: 12px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.h-shownrecords__icon {
+    position: absolute;
+    background: url("../assets/icon/qlts-icon.svg") -72px -338px;
+    width: 7px;
+    height: 5px;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.h-footer__pageblock {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.h-pageblock__backicon {
+    background: url("../assets/icon/qlts-icon.svg") no-repeat -29px -246px;
+    width: 7px;
+    height: 12px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.h-pageblock__nexticon {
+    background: url("../assets/icon/qlts-icon.svg") no-repeat -73px -246px;
+    width: 7px;
+    height: 12px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.h-pageblock__page {
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.h-pageblock__page--selected {
+    background-color: var(--color-grey-4);
+}
+
+.h-footer__right {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    right: 104px;
+    font-weight: 700;
+    font-size: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.h-footer__remaintotal {
+    text-align: end;
+    width: 9%;
+}
+
+.h-footer__accumulatedtotal {
+    text-align: end;
+    width: 9%;
+}
+
+.h-footer__originaltotal {
+    text-align: end;
+    width: 11%;
+}
+
+.h-toolbar__btn--add {
+    width: 110px;
+}
+
+.h-table__loading {
+    display: grid;
+    place-items: center;
+    height: 760px;
+}
+
+.h-table__empty {
+    display: flex;
+    height: 760px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.h-empty__text {
+    font-size: 16px;
+}
+
+.h-footer__paging {
+    width: 30%;
+}
+
+.unselectable {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.h-toolbar__total-selected-records {
+    display: flex;
+    gap: 8px;
+}
+
+.h-total-selected-records__clear {
+    cursor: pointer;
+    color: var(--color-blue-2);
+    font-weight: 700;
+    text-decoration: underline;
+}

@@ -1,0 +1,116 @@
+.h-textfield {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 13px;
+    position: relative;
+    width: 100%;
+}
+
+.h-textfield input {
+    height: 36px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid var(--color-grey-3);
+    width: 100%;
+    padding: 0 12px;
+}
+
+.h-textfield input::placeholder {
+    font-size: 14px;
+    font-style: italic;
+}
+.h-textfield input:hover {
+    border-color: var(--color-blue-2);
+}
+
+.h-textfield input:focus {
+    border-color: var(--color-blue-2);
+}
+.h-textfield input:disabled {
+    cursor: not-allowed;
+    background-color: var(--color-grey-4);
+}
+
+.h-textfield label span {
+    color: red;
+}
+
+.h-textfield input:disabled:hover {
+    border: 1px solid var(--color-grey-3);
+}
+
+.h-textfield input:disabled:focus {
+    border: 1px solid var(--color-grey-3);
+}
+
+.h-textfield input[textRight="true"] {
+    text-align: end;
+}
+
+.h-textfield__icon ~ input {
+    padding-right: 36px;
+}
+
+.h-textfield__icon {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    bottom: 18px;
+    transform: translateY(50%);
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.h-textfield__errormsg {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+    position: absolute;
+    bottom: -18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+
+.h-textfield--error {
+    border-color: red !important;
+}
+
+.h-textfield--error:hover {
+    border-color: red !important;
+}
+
+.h-textfield--error:focus {
+    border-color: red !important;
+}
+
+.h-icon__arrow {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+.h-icon__arrow-up {
+    top: 0;
+}
+
+.h-icon__arrow-down {
+    bottom: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.h-textfield__label {
+    cursor: pointer;
+}
+
+.h-textfield__icon--loading {
+    position: absolute;
+    right: 0;
+}

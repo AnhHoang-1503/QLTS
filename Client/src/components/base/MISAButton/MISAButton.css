@@ -1,0 +1,89 @@
+.h-btn {
+    height: 36px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    min-width: 36px;
+    padding: 0 12px;
+    font-size: 13px;
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.h-btn--main {
+    color: #fff;
+    border: none;
+    background-color: var(--color-blue-2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.h-btn--main:hover {
+    background-color: var(--color-blue-3);
+}
+
+.h-btn--main:active {
+    background-color: var(--color-blue-4);
+}
+
+.h-btn--main:focus {
+    outline: 3px solid var(--color-blue-5);
+}
+
+.h-btn--sub {
+    background-color: #fff;
+    color: var(--color-blue-2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+    color: #000;
+}
+
+.h-btn--sub:hover {
+    background-color: var(--color-blue-5);
+}
+
+.h-btn--sub:active {
+    background-color: #fff;
+}
+
+.h-btn--sub:focus {
+    outline: 3px solid var(--color-blue-5);
+}
+
+.h-btn--outline {
+    background-color: #fff;
+    color: var(--color-blue-2);
+    color: #000;
+    border-color: #0582a2;
+    box-shadow: none;
+}
+
+.h-btn--outline:hover {
+    background-color: var(--color-blue-5);
+}
+
+.h-btn--outline:active {
+    background-color: #fff;
+}
+
+.h-btn--outline:focus {
+    outline: 3px solid var(--color-blue-5);
+}
+
+.h-btn--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.h-btn--disabled:hover,
+.h-btn--disabled:active {
+    background-color: #fff;
+}
+
+.h-btn__icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}

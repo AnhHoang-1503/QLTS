@@ -1,0 +1,65 @@
+.h-dialog {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.h-dialog__container {
+    width: 420px;
+    padding: 20px;
+    padding-top: 24px;
+    background-color: #fff;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+    border-radius: 3px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.h-body__message {
+    width: 75%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.h-detail__toggle {
+    color: #1aa4c8;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.h-dialog__header {
+    min-height: 24px;
+}
+.h-dialog__body {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.h-dialog__footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 40px;
+    gap: 12px;
+}
+
+.h-footer__btn {
+    width: 100px;
+    height: 36px;
+}
+
+.h-message__message {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

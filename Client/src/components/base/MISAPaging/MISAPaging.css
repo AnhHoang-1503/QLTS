@@ -1,0 +1,48 @@
+.h-paging__container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    gap: 26px;
+    font-size: 12px;
+}
+
+.h-paging__recordPerPage {
+    width: 60px;
+    cursor: pointer;
+}
+
+.h-paging__pageList {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    align-items: center;
+}
+
+.h-pageblock__page {
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.h-pageblock__page--selected {
+    background-color: var(--color-grey-5);
+}
+
+.h-pageblock__backicon,
+.h-pageblock__nexticon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-pageblock--disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}

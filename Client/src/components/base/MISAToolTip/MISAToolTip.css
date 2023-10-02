@@ -1,0 +1,61 @@
+.h-tooltip__container {
+    width: fit-content;
+    /* height: 100%; */
+    position: relative;
+}
+
+.overflowable {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.h-tooltip__textbox {
+    visibility: hidden;
+    position: absolute;
+    background-color: #555;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 5;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 120px;
+    text-align: center;
+}
+
+.h-tooltip__textbox::after {
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.h-tooltip__textbox--visiable {
+    visibility: visible;
+}
+
+.bottom {
+    transform: translateX(-50%);
+}
+
+.bottom::after {
+    top: 0px;
+    left: 50%;
+    transform: translateY(-100%);
+    border-color: transparent transparent #555 transparent;
+}
+
+.left {
+    transform: translate(-100%, -50%);
+}
+
+.left::after {
+    right: 0px;
+    bottom: 50%;
+    border-color: transparent transparent transparent #555;
+    transform: translateX(100%) translateY(50%);
+}

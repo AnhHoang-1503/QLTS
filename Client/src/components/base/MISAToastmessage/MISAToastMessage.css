@@ -1,0 +1,29 @@
+.h-tm {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 378px;
+    height: 54px;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 20px;
+    gap: 22px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    z-index: 4;
+}
+
+.h-tm--success {
+    border-color: #1ac871;
+}
+
+.h-tm--warning {
+    border-color: #ffc243;
+}
+
+.h-tm--error {
+    border-color: #ff4141;
+}

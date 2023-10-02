@@ -1,0 +1,158 @@
+.container__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.header__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.header__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.header__button--add {
+    width: 100px;
+}
+
+.vouchers__header {
+    background-color: #fff;
+    height: 70px;
+    flex: 0 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+}
+
+.vouchers__header__tool {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.vouchers__btn {
+    padding: 8px;
+    border-radius: 9999px;
+    cursor: pointer;
+    outline: unset;
+    border: unset;
+    background-color: transparent;
+}
+
+.vouchers__btn--refresh {
+    transition: all 1s ease-in-out;
+}
+
+.vouchers__btn--refresh:hover {
+    animation: rotate 1s linear infinite;
+}
+
+.vouchers__btn:hover {
+    background-color: #e4e6eb;
+}
+
+.vouchers__btn:active {
+    background-color: #d8dadf;
+}
+
+.vouchers__table {
+    height: calc(100% - 70px - 42px);
+}
+
+.container__main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 130px);
+    flex: 0 0 calc(100vh - 130px);
+    overflow: auto;
+}
+
+.main__line {
+    width: 100%;
+    height: 8px;
+    flex: 0 0 8px;
+    background-color: transparent;
+    cursor: row-resize;
+}
+
+.table__vouchers {
+    overflow: hidden;
+}
+
+.table__detail {
+    overflow: hidden;
+}
+
+.detail__header {
+    font-size: 16px;
+    font-weight: 700;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 12px;
+    background-color: #fff;
+}
+
+.table__paging {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-left: 12px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.paging__totalrecords {
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.paging__totalrecords span {
+    font-weight: 700;
+}
+
+.toolbar__total-selected-records {
+    display: flex;
+    gap: 8px;
+}
+
+.total-selected-records__clear {
+    cursor: pointer;
+    color: var(--color-blue-2);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.header__toolbar__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.toast-message-enter-active,
+.toast-message-leave-active {
+    transition: all 0.4s ease-in-out;
+}
+
+.toast-message-enter-from,
+.toast-message-leave-to {
+    transform: translateX(150%);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

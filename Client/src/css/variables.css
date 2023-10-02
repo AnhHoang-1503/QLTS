@@ -1,0 +1,16 @@
+:root {
+    --color-blue-1: #1c3048;
+    --color-blue-2: #1aa4c8; /* primary color */
+    --color-blue-3: #0582a2; /* btn hover */
+    --color-blue-4: #28b7dc; /* btn active */
+    --color-blue-5: #d1edf4; /* btn border when focus */
+    --color-blue-6: #8cd1e3; /* btn disable */
+    --color-blue-7: #0078d7; /* search input */
+    --color-grey-1: #f4f7ff;
+    --color-grey-2: #87929e;
+    --filter-grey-2: invert(62%) sepia(7%) saturate(587%) hue-rotate(171deg) brightness(91%)
+        contrast(93%);
+    --color-grey-3: #afafaf; /* outline text field */
+    --color-grey-4: #f5f5f5; /* search disable */
+    --color-grey-5: #e0e0e0;
+}

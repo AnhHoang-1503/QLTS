@@ -1,0 +1,102 @@
+.h-datepicker {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 13px;
+    position: relative;
+    /* margin-bottom: 6px; */
+    width: 100%;
+}
+
+.h-datepicker input {
+    height: 36px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid var(--color-grey-3);
+    width: 100%;
+    padding: 0 12px;
+}
+
+.h-datepicker input::placeholder {
+    font-size: 14px;
+    font-style: italic;
+}
+.h-datepicker input:hover {
+    border-color: var(--color-blue-2);
+}
+
+.h-datepicker input:focus {
+    border-color: var(--color-blue-2);
+}
+.h-datepicker input:disabled {
+    background-color: var(--color-grey-4);
+}
+
+.h-datepicker label span {
+    color: red;
+}
+
+.h-datepicker input:disabled:hover {
+    border: 1px solid var(--color-grey-3);
+}
+
+.h-datepicker input:disabled:focus {
+    border: 1px solid var(--color-grey-3);
+}
+
+.h-datepicker input[textRight="true"] {
+    text-align: end;
+}
+
+.h-datepicker__icon ~ input {
+    padding-right: 36px;
+}
+
+.h-datepicker__icon {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    bottom: 18px;
+    transform: translateY(50%);
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.h-datepicker__errormsg {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+    position: absolute;
+    bottom: -18px;
+}
+
+.h-datepicker--error {
+    border-color: red !important;
+}
+
+.h-datepicker--error:hover {
+    border-color: red !important;
+}
+
+.h-datepicker--error:focus {
+    border-color: red !important;
+}
+
+.h-icon__arrow {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+.h-icon__arrow-up {
+    top: 0;
+}
+
+.h-icon__arrow-down {
+    bottom: 0;
+}
+
+.h-datepicker__label {
+    cursor: pointer;
+}

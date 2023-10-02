@@ -1,0 +1,224 @@
+.h-navbar {
+    width: 66px;
+    flex: 0 0 66px;
+    height: 100vh;
+    background-color: var(--color-blue-1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    font-size: 14px;
+}
+
+.h-navbar--expand {
+    width: 260px;
+    flex: 0 0 260px;
+}
+
+.h-navbar__logo {
+    padding: 12px 0 4px 16px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.h-logo__text,
+.h-navbar__btn--text {
+    overflow: hidden;
+    flex: 1;
+}
+
+.h-logo__img {
+    background: url("../../../assets/icon/qlts-icon.svg") no-repeat -20px -680px;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+}
+
+.h-navbar__overview {
+    margin-top: 16px;
+}
+
+.h-navbar__btn--icon {
+    width: 44px;
+    padding-left: 12px;
+    height: 40px;
+    margin-left: 11px;
+    border-radius: 6px;
+    color: var(--color-grey-2);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.h-navbar--expand .h-navbar__btn--icon {
+    width: calc(100% - 24px);
+}
+
+.h-navbar__btn--icon > div:first-child {
+    background-image: url("../../../assets/icon/qlts-icon.svg");
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    opacity: 0.4;
+}
+
+.h-btn__icon--expand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 0;
+    right: 0px;
+    opacity: 0.4;
+    position: absolute;
+    transition: all 0.3s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+    filter: invert(95%) sepia(5%) saturate(19%) hue-rotate(197deg) brightness(106%) contrast(106%);
+}
+
+.h-navbar__btn--icon:hover {
+    background-color: var(--color-blue-2);
+    color: #fff;
+    opacity: 1;
+}
+
+.h-navbar--expand .h-btn__icon--expand {
+    width: 30px;
+}
+
+.h-navbar__btn--icon:hover .h-btn__icon--expand {
+    opacity: 1;
+}
+
+.h-navbar__btn--icon--active .h-btn__icon--expand {
+    opacity: 1;
+}
+
+.h-navbar__btn--icon:hover > div:first-child {
+    background-position-y: -197px;
+    opacity: 1;
+}
+
+.h-navbar__btn--icon--active {
+    background-color: var(--color-blue-2);
+    color: #fff;
+    opacity: 1;
+}
+
+.h-navbar__btn--icon--active > div:first-child {
+    background-position-y: -197px;
+    opacity: 1;
+}
+
+.h-overview__icon {
+    background-position: -21px -153px;
+}
+
+.h-assets__icon {
+    background-position: -65px -153px;
+}
+
+.h-road__icon {
+    background-position: -110px -153px;
+}
+
+.h-tool__icon {
+    background-position: -153px -153px;
+}
+
+.h-categories__icon {
+    background-position: -197px -153px;
+}
+
+.h-search__icon {
+    background-position: -241px -153px;
+}
+
+.h-report__icon {
+    background-position: -329px -153px;
+}
+
+.h-navbar__bottom {
+    width: 66px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    border-top: 2px solid var(--color-grey-2);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    justify-content: end;
+    padding-right: 24px;
+}
+
+.h-navbar__btn--shrink {
+    background: url("../../../assets/icon/qlts-icon.svg") no-repeat -329px -417px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.h-navbar--expand .h-navbar__bottom {
+    width: 100%;
+    padding-right: 16px;
+}
+
+.h-navbar--expand .h-navbar__btn--shrink {
+    background-position: -285px -417px;
+}
+
+.h-navbar__assets--expand {
+    width: calc(100% - 24px);
+    background-color: #33455b;
+    margin-left: 11px;
+    color: #768291;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.h-assets__item {
+    padding-left: 52px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex: 0 0 38px;
+}
+
+.h-assets__item:hover {
+    background-color: #3e5674;
+    color: #fff;
+}
+
+.navbarItemsExpand-enter-active,
+.navbarItemsExpand-leave-active {
+    transition: all 0.2s ease-in-out;
+}
+
+.navbarItemsExpand-enter-from,
+.navbarItemsExpand-leave-to {
+    max-height: 0px;
+}
+
+.navbarItemsExpand-enter-to,
+.navbarItemsExpand-leave-from {
+    max-height: 500px;
+}
+
+.h-assets__item--active {
+    color: #fff;
+}

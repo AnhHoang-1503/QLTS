@@ -1,0 +1,192 @@
+.dropdown__container {
+    position: relative;
+    display: flex;
+    font-size: 13px;
+    flex-direction: column;
+    width: 100%;
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #d1dae9;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #abb6c8;
+        border-radius: 10px;
+    }
+}
+
+.h-dropdown {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.h-dropdown__current {
+    height: 100%;
+    outline: none;
+    padding-left: 12px;
+    width: 100%;
+    padding-right: 12px;
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    font-size: inherit;
+}
+
+.h-dropdown__icon ~ .h-dropdown__current {
+    padding-left: 30px;
+}
+
+.h-dropdown .h-dropdown__icon {
+    position: absolute;
+    margin: 6px;
+}
+
+.h-dropdown .h-dropdown__expand {
+    position: absolute;
+    right: 0;
+    width: 36px;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-dataList__conatiner {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    padding: 4px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+}
+
+.h-dropdown__dataList {
+    width: 100%;
+    max-height: 220px;
+    background-color: #fff;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding: 4px;
+    gap: 2px;
+}
+
+.h-dataList__item {
+    flex: 0 0 36px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.h-dataList__item:hover {
+    background-color: #c7e0f5;
+}
+
+.h-dataList__item:focus {
+    background-color: #c7e0f5;
+}
+
+.h-item__check {
+    width: 36px;
+    height: 100%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 2px;
+}
+
+.selected--nocheck {
+    background-color: #adc8df;
+}
+
+.selected .check-icon {
+    background: url("../../../assets/icon/check.svg") no-repeat center center;
+    height: 13px;
+    width: 36px;
+}
+
+.h-item__name {
+    padding-left: 8px;
+}
+
+.selected .h-item__check {
+    background-color: #c7e0f5;
+}
+
+.dropdown__container label span {
+    color: red;
+}
+
+.dropdown__container label {
+    margin-bottom: 12px;
+}
+
+.h-dropdown__errormsg {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+    position: absolute;
+    bottom: -18px;
+}
+
+.h-dropdown--error .h-dropdown__current {
+    border-color: red !important;
+}
+
+.h-dropdown--error .h-dropdown__current:hover {
+    border-color: red !important;
+}
+
+.h-dropdown--error .h-dropdown__current:focus {
+    border-color: red !important;
+}
+
+.h-dropdown__current:disabled {
+    background-color: inherit;
+}
+
+.h-dropdown__current:focus {
+    border-color: var(--color-blue-2);
+}
+
+.h-item__empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.focus {
+    background-color: #c7e0f5;
+}
+
+.h-item__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    flex: 0 0 70px;
+}
+
+.h-dropdown__label {
+    cursor: pointer;
+}
+
+.h-dropdown__current:disabled {
+    cursor: inherit;
+}

@@ -1,0 +1,31 @@
+.h-excelbox__itembox {
+    position: absolute;
+    background-color: #fff;
+    width: 150px;
+    padding: 6px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    transform: translateX(-50%);
+}
+
+.h-excelbox__item {
+    background-color: #fff;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    cursor: pointer;
+    gap: 12px;
+}
+
+.h-excelbox__item:hover {
+    background-color: var(--color-grey-4);
+}
+
+.h-fileinput {
+    display: none;
+}

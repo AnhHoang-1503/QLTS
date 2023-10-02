@@ -1,0 +1,97 @@
+.selectassetsform__container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    place-items: center;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.form__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0 16px;
+}
+
+.header__closebtn {
+    cursor: pointer;
+}
+
+.form__footer {
+    width: 100%;
+    height: 58px;
+    background-color: #e5e5e5;
+    padding: 0 16px;
+    border-radius: 0 0 3px 3px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer__btn {
+    width: 100px;
+}
+
+.body__toolbar {
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    gap: 8px;
+}
+
+.toolbar__search {
+    width: 300px;
+}
+
+.body__table {
+    height: 620px;
+}
+
+.body__paging {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-left: 12px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.paging__totalrecords {
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.paging__totalrecords span {
+    font-weight: 700;
+}
+
+.toolbar__total-selected-records {
+    display: flex;
+    gap: 8px;
+}
+
+.total-selected-records__clear {
+    cursor: pointer;
+    color: var(--color-blue-2);
+    font-weight: 700;
+    text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+﻿using AutoMapper;
+using MISA.WebFresher05.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MISA.WebFresher05.Application
+{
+    public class BudgetCategoryProfile : Profile
+    {
+        public BudgetCategoryProfile()
+        {
+            CreateMap<BudgetCategory, BudgetCategoryDto>();
+        }
+    }
+}
